@@ -642,20 +642,20 @@
                                     data-bs-toggle="tab" data-bs-target="#nav-new-arrival" role="tab" aria-selected="true">
                                     <span>New Arrival</span>
                                 </button>
-                                <button type="button" class="product-tab__link nav-link" id="nav-top-sale-tab" data-bs-toggle="tab"
+                                <!-- <button type="button" class="product-tab__link nav-link" id="nav-top-sale-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-top-sale" role="tab" aria-selected="true">
                                     <span>Top Sale</span>
                                 </button>
                                 <button type="button" class="product-tab__link nav-link" id="nav-sale-off-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-sale-off" role="tab" aria-selected="true">
                                     <span>Sale Off</span>
-                                </button>
+                                </button> -->
                             </div>
                             <div class="tab-content product-tab__content" id="product-tabContent">
                                 <div class="tab-pane fade show active" id="nav-new-arrival" role="tabpanel"
                                     aria-labelledby="nav-new-arrival-tab">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-sm-6 mb--40 mb-md--30">
+                                    <div class="row" id="image_data">
+                                        <!-- <div class="col-lg-4 col-sm-6 mb--40 mb-md--30">
                                             <div class="irid-product">
                                                 <div class="product-inner">
                                                     <figure class="product-image">
@@ -707,9 +707,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6 mb--40 mb-md--30">
-                                            <div class="irid-product">
+                                        </div> -->
+                                        <!-- <div class="col-lg-4 col-sm-6 mb--40 mb-md--30"> -->
+                                            <!-- <div class="irid-product">
                                                 <div class="product-inner">
                                                     <figure class="product-image">
                                                         <div class="product-image--holder">
@@ -719,8 +719,8 @@
                                                                 <img src="assets/img/products/prod-18-4-500x475.jpg"
                                                                     alt="Product Image" class="secondary-image">
                                                             </a>
-                                                        </div>
-                                                        <div class="irid-product-action">
+                                                        </div> -->
+                                                        <!-- <div class="irid-product-action">
                                                             <div class="product-action">
                                                                 
                                                                 <a class="add_to_cart_btn action-btn"
@@ -735,8 +735,8 @@
                                                                 </a>
                                                                 
                                                             </div>
-                                                        </div>
-                                                        <span class="product-badge sale">Sale</span>
+                                                        </div> -->
+                                                        <!-- <span class="product-badge sale">Sale</span>
                                                     </figure>
                                                     <div class="product-info">
                                                         <h3 class="product-title">
@@ -938,10 +938,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-top-sale" role="tabpanel"
+                                <!-- <div class="tab-pane fade" id="nav-top-sale" role="tabpanel"
                                     aria-labelledby="nav-top-sale-tab">
                                     <div class="row">
                                         <div class="col-lg-4 col-sm-6 mb--40 mb-md--30">
@@ -1283,7 +1283,7 @@
                                                             </div>
                                                         </div>
                                                         <span class="product-badge hot">hot</span>
-                                                    </figure>
+                                                    </figure>  
                                                     <div class="product-info">
                                                         <h3 class="product-title">
                                                             <a href="product-details.html">Chain print bermuda
@@ -1471,18 +1471,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-12 text-center">
                         <a href="products-list.html" class="heading-button">View All</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         
@@ -1828,6 +1828,9 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/ajax-mail.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/foacs-online-gallery-3a5aedbe-1703-11ee-be56-0242ac120002.js"></script>
+    <script src="assets/js/foacs-online-setup-3a5aedbe-1703-11ee-be56-0242ac120002.js"></script>
     <script src="assets/js/revoulation/jquery.themepunch.tools.min.js"></script>
     <script src="assets/js/revoulation/jquery.themepunch.revolution.min.js"></script>
     <script src="assets/js/revoulation/extensions/revolution.extension.actions.min.js"></script>
@@ -1840,5 +1843,15 @@
     <script src="assets/js/revoulation/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="assets/js/revoulation/extensions/revolution.extension.video.min.js"></script>
     <script src="assets/js/revoulation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            displayDynamicCollectionPage('/Gallery/TheIridescentProduct');
+            
+        });
+    </script>
+
+
 </body>
 </html>
